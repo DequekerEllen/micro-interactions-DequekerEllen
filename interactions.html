@@ -17,6 +17,8 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/screen.css">
+
+        <script src="./script/app.js"></script>
     </head>
     <body>
         <section class="o-row o-row--lg o-row--login o-row--beta">
@@ -30,11 +32,11 @@
                             <h5>
                                 Floating labels
                             </h5>     
-                            <p class="c-form-field">
+                            <p class="c-form-field js-email-field">
                                 <label class="c-label" for="username">
                                     Email
                                 </label>
-                                <input class="c-input" type="email" name="username" id="username"
+                                <input class="js-email-input c-input" type="email" name="username" id="username"
                                     required>
                             </p>
                         </div>
@@ -42,14 +44,14 @@
                             <h5>
                                 Toggle password
                             </h5>   
-                            <p class="c-form-field">
+                            <p class="c-form-field js-pw-field">
                                 <label class="c-label" for="password">
                                     Password
                                 </label>
                                 <span class="c-toggle-password-container">
-                                    <input class="c-input" type="password" name="password" id="password" required>
+                                    <input class="c-input js-password js-pw-input" type="password" name="password" id="password" required>
                                     <span class="c-toggle-password">
-                                        <input class="o-hide-accessible c-toggle-password__checkbox" type="checkbox" id="togglePassword">
+                                        <input class="o-hide-accessible c-toggle-password__checkbox js-toggle-password"  type="checkbox" id="togglePassword">
                                         <label class="c-toggle-password__label" for="togglePassword">
                                             <svg class="c-toggle-password__icon c-toggle-password__icon--hide" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                                                 <path
